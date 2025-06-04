@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Wed, Jun 04, 2025 11:39:09 AM
+//Last modified: Wed, Jun 04, 2025 11:44:27 AM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202504040659-cfc1e8923b";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "B99EC6A1-4E6B-57F1-45BF-11B647569FA5";
+fileInfo "UUID" "01A6990A-47A7-9AEF-1FBB-9FBF242B3D96";
 createNode transform -s -n "persp";
 	rename -uid "184CF462-46F8-8E8D-D665-85840794CAA3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.3180938748735125 42.678953194273333 38.657548361076898 ;
-	setAttr ".r" -type "double3" -45.600000000000094 -5.1999999999999966 3.9921233401734319e-16 ;
+	setAttr ".t" -type "double3" -1.1242004644279984 31.506945277693902 45.806744845783477 ;
+	setAttr ".r" -type "double3" -30.599999999999014 -6.4000000000000208 0 ;
 	setAttr ".rpt" -type "double3" -7.3668994438908566e-16 3.9824223546537209e-15 -4.1912783830478501e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B6AEA740-4D3C-66FD-F6DA-4E996D4528EC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 51.905271012170239;
+	setAttr ".coi" 51.905271012171418;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1784,7 +1784,7 @@ createNode mesh -n "revolvedSurfaceShape5" -p "revolvedSurface5";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.91168275475502014 0.29169273376464844 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 674 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 1 1 0.34015125 1 0.34015125
@@ -1946,6 +1946,36 @@ createNode mesh -n "revolvedSurfaceShape5" -p "revolvedSurface5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 32 ".pt";
+	setAttr ".pt[409]" -type "float3" 0 -9.0205621e-17 0.15951109 ;
+	setAttr ".pt[410]" -type "float3" 0.23063073 3.8857806e-16 -0.19911058 ;
+	setAttr ".pt[412]" -type "float3" 0 -9.0205621e-17 0.15951109 ;
+	setAttr ".pt[414]" -type "float3" 0.15846659 -4.4408921e-16 -0.16873117 ;
+	setAttr ".pt[415]" -type "float3" 0.15846659 -4.4408921e-16 -0.16873117 ;
+	setAttr ".pt[416]" -type "float3" 0.23063073 2.220446e-16 -0.19911058 ;
+	setAttr ".pt[426]" -type "float3" 0 3.3306691e-16 -0.2436358 ;
+	setAttr ".pt[427]" -type "float3" 0 3.3306691e-16 -0.2436358 ;
+	setAttr ".pt[447]" -type "float3" -0.21861695 -0.17534488 8.8817842e-16 ;
+	setAttr ".pt[448]" -type "float3" 0 0.17419618 0 ;
+	setAttr ".pt[449]" -type "float3" 0 0.17419618 0 ;
+	setAttr ".pt[452]" -type "float3" -0.21861695 -0.17534488 8.8817842e-16 ;
+	setAttr ".pt[461]" -type "float3" 0.16463774 -4.4408921e-16 0 ;
+	setAttr ".pt[462]" -type "float3" 0.16463774 -4.4408921e-16 0 ;
+	setAttr ".pt[463]" -type "float3" 0 3.7252903e-09 0 ;
+	setAttr ".pt[536]" -type "float3" 0 -0.096557565 7.4505806e-09 ;
+	setAttr ".pt[537]" -type "float3" 0 -0.17318013 7.4505806e-09 ;
+	setAttr ".pt[540]" -type "float3" 0 -0.076622561 0 ;
+	setAttr ".pt[549]" -type "float3" 0 0.072738446 -0.23194717 ;
+	setAttr ".pt[550]" -type "float3" 0 -7.2164497e-16 0.23285101 ;
+	setAttr ".pt[551]" -type "float3" 0 3.7252903e-09 0.23285101 ;
+	setAttr ".pt[554]" -type "float3" 0 0.072738446 -0.23194717 ;
+	setAttr ".pt[564]" -type "float3" -0.08884722 -0.14722951 -0.18152547 ;
+	setAttr ".pt[565]" -type "float3" -0.08884722 -0.14722951 -0.18152547 ;
+	setAttr ".pt[584]" -type "float3" 0 4.7683716e-07 0.15871142 ;
+	setAttr ".pt[585]" -type "float3" 0 -5.5511151e-17 -0.14107728 ;
+	setAttr ".pt[586]" -type "float3" 0 4.7683716e-07 0.01763412 ;
+	setAttr ".pt[593]" -type "float3" -0.24702379 3.3306691e-16 -0.18022637 ;
+	setAttr ".pt[594]" -type "float3" -0.24702379 3.3306691e-16 -0.18022637 ;
 	setAttr -s 601 ".vt";
 	setAttr ".vt[0:165]"  0.0057538138 3.2526065e-19 -4.44903946 4.084185123 3.3306691e-16 -5.037798405
 		 -4.084185123 -1.6950019e-15 -5.037798405 4.18142986 3.3306691e-16 -0.17000118 -4.18142986 -1.7062821e-15 -0.17000118
