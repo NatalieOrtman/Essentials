@@ -240,13 +240,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3083458721326528959, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168267276935345671, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1184
+      objectReference: {fileID: 0}
     - target: {fileID: 7168267276935345671, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.51
       objectReference: {fileID: 0}
     - target: {fileID: 7168267276935345671, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.17
+      value: 5.2457
       objectReference: {fileID: 0}
     - target: {fileID: 7168267276935345671, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -283,7 +291,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2570071074524924707, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1330950675}
+    - targetCorrespondingSourceObject: {fileID: 2570071074524924707, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1330950678}
   m_SourcePrefab: {fileID: 100100000, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
 --- !u!4 &5483252 stripped
 Transform:
@@ -3335,6 +3349,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 943345215084132440, guid: dbf04e4dd17ef93459ce33cef79e486d, type: 3}
   m_PrefabInstance: {fileID: 1328963918}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1330950671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2570071074524924707, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+  m_PrefabInstance: {fileID: 5483251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1330950673 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4299534897324225737, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+  m_PrefabInstance: {fileID: 5483251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330950675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330950671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1330950673}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: touch
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1330950678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330950671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a28a400391344b9c88e28b4820b5ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHoldTime: 0.1
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterRepeatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1330950673}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: touch
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerHoldTime: 0.01
+  repeatHoldTime: 0.01
+  exitHoldTime: 0.01
+  canRepeat: 0
+  repeatTimes: 10
 --- !u!1001 &1381056274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5355,6 +5457,10 @@ PrefabInstance:
     - target: {fileID: 2570071074524924707, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
       propertyPath: m_Name
       value: Apple_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083458721326528959, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7168267276935345671, guid: fa44b08a22431f44d978cb82f9d214ec, type: 3}
       propertyPath: m_LocalPosition.x
