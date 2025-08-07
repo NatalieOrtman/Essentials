@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5921786068632264401}
   - component: {fileID: 4979567353565076084}
   - component: {fileID: 1203210432538349810}
+  - component: {fileID: 6218106813121871375}
   m_Layer: 13
   m_Name: Apple_0
   m_TagString: Untagged
@@ -34,7 +35,8 @@ Transform:
   m_LocalPosition: {x: -4.2699986, y: -1.3199997, z: 0}
   m_LocalScale: {x: 2, y: 2.1184, z: 5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7038442911331642956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1028326573768180458
@@ -185,6 +187,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: touch
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 370426919699043808}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: touch
           m_BoolArgument: 0
@@ -346,3 +360,112 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6218106813121871375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2570071074524924707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 66a28484f2f7f43cd887c08001b4a4b9, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TextMeshProBehaviour, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 66a28484f2f7f43cd887c08001b4a4b9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &5733131080331608154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7168267276935345671}
+    m_Modifications:
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876209832414754841, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+      propertyPath: m_Name
+      value: Particle System Gold
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+--- !u!198 &370426919699043808 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5382972559120504250, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+  m_PrefabInstance: {fileID: 5733131080331608154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7038442911331642956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3332029163373800982, guid: 8696fd6601b7bdc43b6810e6e356ad20, type: 3}
+  m_PrefabInstance: {fileID: 5733131080331608154}
+  m_PrefabAsset: {fileID: 0}
